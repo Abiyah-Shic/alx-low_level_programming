@@ -11,8 +11,11 @@ int start = 48;
 while (start <= 57)
 {
 putchar(start);
+if (start != 57)
+{
 putchar(',');
 putchar(' ');
+}
 start++;
 }
 putchar('\n');
