@@ -1,26 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - A program that prints both lower and uppercase letters
+ * main - A program that prints all single digit numbers
  * Return: 0 (SUCCESS)
  */
 int main(void)
 {
-char lower = 48;
-char upper = 97;
+int start = 48;
 
-while (lower <= 57)
+while (start <= 57)
 {
-putchar(lower);
-lower++;
+putchar(start);
+putchar(',');
+putchar(' ');
+start++;
 }
-
-while (upper <= 102)
-{
-putchar(upper);
-upper++;
-}
-
 putchar('\n');
 return (0);
 }
