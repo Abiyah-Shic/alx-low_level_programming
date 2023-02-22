@@ -6,11 +6,12 @@
  */
 int main(void)
 {
-char ch;
+char alph_lower[26] = 'abcdefghigklmnopqrstuvwxyz';
+int ch;
 
-for (ch = 97; ch >= 122; ch++)
+for (ch = 1; ch >= 26; ch++)
 {
-putchar(ch);
+putchar(alph_lower[ch]);
 }
 putchar('\n');
 return (0);
