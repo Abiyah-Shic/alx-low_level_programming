@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 /**
  * main - A program that checks whether a random number is positive or negative
  * Return: 0 (SUCCESS)
  */
 int main(void)
 {
+srand(time(0));
 int n = rand() - RAND_MAX / 2 ;
 if (n > 0)
 {
