@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-int n = rand();
+int n = rand() - RAND_MAX / 2 ;
 if (n > 0)
 {
 printf("%i is positive\n", n);
